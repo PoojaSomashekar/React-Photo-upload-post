@@ -1,0 +1,60 @@
+.image_div{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #1275d6d6;
+  border: 1px solid blue;
+  margin-top: 16px;
+  margin-left: 48px;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-left: 30%;
+  max-width: 40%;
+  box-shadow: 2px 3px 2px 3px #888888 !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.previewProfilePic{
+  margin-top: 15px;
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: center;
+}
+.ratings{
+  margin-left: 43px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 0;
+  box-shadow: 2px 3px 2px 3px #888888 !important;
+  justify-content: center;
+  text-align: center;
+}
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  box-shadow: 2px 3px 2px 3px #888888 !important;
+  justify-content: center;
+  text-align: center;
+}
+}
