@@ -15,13 +15,12 @@ import './NewPost.css';
 
 
 
-const NewPost = (props) => {
+const NewPost = () => {
   let [data, setData] = useState({});
   const [ratingValue, setRatingValue] = useState(0);
   let [imageData, setImageData] = useState(null);
   const navigate = useNavigate()
-  let newPost = {
-  }
+  let newPost = {};
   const onTitleHandler = (e) => {
     let post = {};
     post.id = CatImages[CatImages.length - 1].id + 1;
@@ -29,8 +28,6 @@ const NewPost = (props) => {
     setData(post);
   }
   const onImageChange = (e) => {
-    // let img = URL.createObjectURL(e.target.files[0]);
-    // setImageData(e.target.files[0].name);
     if (e.target.files[0]) {
       console.log("picture: ", e.target.files);
 
@@ -53,14 +50,14 @@ const NewPost = (props) => {
     console.log(newPost);
     CatImages.push(newPost);
     console.log(CatImages);
-    navigate('/posts');
+    navigate('/');
 
   }
 
   const onCancel = () => {
     setData(null);
     setImageData(null);
-    navigate('/posts');
+    navigate('/');
   }
 
   return (
@@ -95,14 +92,6 @@ const NewPost = (props) => {
           <img className="playerProfilePic_home_tile" src={imageData} />
         </div>
       </CardContent>
-
-      {/* <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      /> */}
-
       <CardActions>
         <Button size="small" onClick={onSubmit}>Submit</Button>
         <Button size="small" onClick={onCancel}>Cancel</Button>

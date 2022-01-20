@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
+import React from "react";
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import { useNavigate } from 'react-router-dom';
-import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 
 import CatImages from '../../cat-images';
 import './Posts.css';
-import Post from "../Post/Post";
 
 const Posts = (props) => {
   console.log(CatImages);
